@@ -2,39 +2,16 @@
 Reinforcement Learning (RL) is a powerful area of machine learning where an agent learns by interacting with an environment. RL is based on trial and error, using rewards as feedback to improve its decision-making.
 
 # Key terms
+Agent: The learner that takes actions in the environment.
 
-environment
+Environment: The world where the agent interacts.
 
-agent
+State (s): A representation of the current situation.
 
-state (s)
+Action (a): The set of possible actions the agent can take.
 
-action (a)
+Reward (R): A scalar feedback signal that tells the agent how good or bad its action was.
 
-policy 
+Policy (π): A strategy that maps states to actions.
 
-state space
-
-action space
-
-state transition
-
-reward (r)
-
-trajectory - finite, infinite
-
-episode
-
-deterministic and stochastic policies
-
-reward return
-
-discount return
-
-discount rate
-
-Markov Decision Process
-
-state value - tells you how good the policy is - policy evaluation
-
-action value
+Value Function (V): Measures how good a state is.
