@@ -61,6 +61,8 @@ Let's break down the mathematical representation of an MDP:
     The Q-function represents the expected cumulative reward when taking action a in state s and then following policy π. It helps in evaluating the quality of state-action pairs1.
 
     Bellman Equation for V:
+     This equation expresses the relationship between the value of a state (or action) and the values of its successor states (or actions). It's crucial for solving MDPs. For a state s:
+V(s) = E[R(s, a) + γV(s')] where the expectation is over possible actions a and next states s'. (This is a simplified version; there are versions for action-values as well.)
     Vπ(s)=∑aπ(a∣s)∑s′P(s′∣s,a)[R(s,a,s′)+γVπ(s′)]Vπ(s)=∑aπ(a∣s)∑s′P(s′∣s,a)[R(s,a,s′)+γVπ(s′)]
 
     This equation expresses the value of a state in terms of the immediate reward and the discounted value of the next state. It forms the basis for many reinforcement learning algorithms1.
