@@ -1,0 +1,7 @@
+Bellman Equation: This equation expresses the relationship between the value of a state (or action) and the values of its successor states (or actions).
+The value of being in a state is equal to the expected immediate reward you will get from that state, plus the discounted expected value of the future states you will transition to, considering all possible actions you can take and their probabilities as dictated by your policy.
+It's crucial for solving MDPs.
+For a state s:
+V(s) = E[R(s, a) + γV(s')]
+where the expectation is over possible actions a and next states s'. (This is a simplified version; there are versions for action-values as well.)
+
