@@ -16,6 +16,28 @@ Policy (π): A strategy that maps states to actions.
 
 Value Function (V): Measures how good a state is.
 
+
+State vs Observation:
+
+- The *true* condition of the system after the movement.
+- Example: “The robot arm ended up at exactly **10.2 cm forward**.”
+- Hidden from the agent (the agent never directly knows this).
+- This is **not noisy** — it’s just what actually happened in the environment.
+- **Observation**:
+    - What the agent *perceives* about the state through its sensors.
+    - Example: encoder says **10.1 cm**, camera says **10.3 cm**.
+    - This is **noisy** due to friction, calibration error, sensor resolution, etc.
+    - The agent must act based only on this noisy signal.
+    
+    ### **Key points to remember:**
+    
+    - The **agent never sees the true state** directly.
+    - It only gets the **observation** the environment emits.
+    - Using these (possibly noisy/partial) observations, the agent tries to infer or approximate the hidden state.
+    - The **environment “knows” the true state** because it simulates or evolves it.
+    - The **observation is what the environment *gives* to the agent**.
+    - The environment doesn’t “not know” the observation — it actually *creates* the observation from the state.
+
 Markov Decision Process (MDP)
 
 A Markov Decision Process is a mathematical framework used to model decision-making in situations where outcomes are partly random and partly under the control of a decision-maker. MDPs are fundamental to reinforcement learning as they provide a formal way to model the interaction between an agent and its environment13.
